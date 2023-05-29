@@ -1,0 +1,39 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  padding: 0;
+  background-color: #f5f5f5;
+  margin: 0; /* Remove default margin */
+  height: 100px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.blog-logo {
+  margin-left: 0.5em;
+}
+
+/* Post container */
+.post-card {
+  margin: 20px;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+}
