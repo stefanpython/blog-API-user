@@ -68,14 +68,14 @@
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  padding: 0 4em;
   padding-bottom: 2em;
   border: 1px solid whitesmoke;
+  padding: 60px;
 }
 
 .description h1 {
   width: 10em;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .description p {
@@ -133,7 +133,8 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 30em;
+  max-width: 30em;
+  min-width: 20em;
 }
 
 .comment-form__button {
