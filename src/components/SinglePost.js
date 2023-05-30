@@ -42,16 +42,36 @@ const SinglePost = () => {
   }
 
   return (
-    <div>
-      <p>{post.content}</p>
-      <p>Date: {new Date(post.date).toLocaleDateString()}</p>
+    <div className="comment-container">
+      <h1>{post.authorName}</h1>
+      <p className="post-comment">{post.content}</p>
+      <p>
+        Date:
+        {new Date(post.date).toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+        })}
+      </p>
 
       <h3>Comments</h3>
       {comments && comments.length > 0 ? (
         comments.map((comment) => (
-          <div key={comment._id}>
+          <div className="comment-content" key={comment._id}>
             <p>{comment.content}</p>
             <p>By: {comment.user}</p>
+            <p>
+              Posted at:
+              {new Date(comment.date).toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+              })}
+            </p>
           </div>
         ))
       ) : (

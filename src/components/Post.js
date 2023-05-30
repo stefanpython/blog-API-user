@@ -26,7 +26,15 @@ const Posts = () => {
             <h1>{post.authorName}</h1>
             <p>{post.title}</p>
             <br />
-            <p>{new Date(post.date).toLocaleDateString()}</p>
+            <p>
+              {new Date(post.date).toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+              })}
+            </p>
             <Link to={`/posts/${post._id}`}>
               <button>View Post</button>
             </Link>
