@@ -36,7 +36,7 @@ const Posts = () => {
               })}
             </p>
             <Link to={`/posts/${post._id}`}>
-              <button>View Post</button>
+              <button className="view-button">View Post</button>
             </Link>
           </div>
         ))}
