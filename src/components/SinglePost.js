@@ -87,7 +87,6 @@ const SinglePost = () => {
       <h1>{post.authorName}</h1>
       <p className="post-comment">{post.content}</p>
       <p>
-        Date:
         {new Date(post.date).toLocaleDateString(undefined, {
           year: "numeric",
           month: "long",

@@ -111,10 +111,13 @@
   height: 2em;
   font-size: 17px;
   cursor: pointer;
+  background-color: #964b00b0;
+  border-radius: 7px;
+  color: white;
 }
 
 .view-button:hover {
-  background-color: rgba(206, 253, 152, 0.699);
+  background-color: #703f00c0;
 }
 
 /* Comment form  */
