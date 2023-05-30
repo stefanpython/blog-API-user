@@ -1,20 +1,31 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import React from "react";
 import "../App.css";
-// import App from "../App";
 import Nav from "./Nav";
 import Post from "./Post";
 import Description from "./Description";
+import SinglePost from "./SinglePost";
 
 const RouterSwitch = () => {
   return (
     <HashRouter>
       <Nav />
-      <Description />
       <Routes>
-        <Route path="/" element={<Post />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/posts/:id" element={<SinglePost />} />
       </Routes>
     </HashRouter>
+  );
+};
+
+const Homepage = () => {
+  const location = useLocation();
+
+  return (
+    <>
+      {location.pathname === "/" && <Description />}
+      <Post />
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -21,11 +22,14 @@ const Posts = () => {
       <h1>Blog Posts</h1>
       <div className="post-list">
         {posts.map((post) => (
-          <div key={post.id} className="post-card">
-            <h2>{post.title}</h2>
-            <p>{post.content}</p>
+          <div key={post._id} className="post-card">
+            <h1>{post.authorName}</h1>
+            <p>{post.title}</p>
+            <br />
             <p>{new Date(post.date).toLocaleDateString()}</p>
-            <p>{post.authorName}</p>
+            <Link to={`/posts/${post._id}`}>
+              <button>View Post</button>
+            </Link>
           </div>
         ))}
       </div>

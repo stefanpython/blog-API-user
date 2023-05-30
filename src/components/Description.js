@@ -3,12 +3,7 @@ import React from "react";
 const Description = () => {
   return (
     <div className="description">
-      <h1>Welcome to our Blog of Posts!</h1>
-      <p>
-        Explore our collection of informative and engaging articles covering a
-        wide range of topics. From technology and science to travel and
-        lifestyle, we have something for everyone.
-      </p>
+      <h1>Explore our collection of informative and engaging articles</h1>
       <p>
         Stay up to date with the latest trends, discover new ideas, and join the
         conversation by reading, commenting, and sharing our posts with your
