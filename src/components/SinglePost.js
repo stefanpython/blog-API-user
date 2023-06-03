@@ -10,7 +10,7 @@ const SinglePost = () => {
 
   useEffect(() => {
     // Fetch the individual post based on the ID
-    fetch(`http://localhost:3000/api/posts/${id}`)
+    fetch(`https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}`)
       .then((response) => response.json())
       .then((data) => {
         // Handle the response and extract the post data
@@ -21,7 +21,7 @@ const SinglePost = () => {
       });
 
     // Fetch the comments for the post
-    fetch(`http://localhost:3000/api/posts/${id}/comments`)
+    fetch(`https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}/comments`)
       .then((response) => {
         return response.json();
       })
@@ -51,13 +51,16 @@ const SinglePost = () => {
     event.preventDefault();
 
     // Send the new comment to the API
-    fetch(`http://localhost:3000/api/posts/${id}/comments`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ content: newComment, user: name }),
-    })
+    fetch(
+      `https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}/comments`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ content: newComment, user: name }),
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         // Handle the response and update the comments

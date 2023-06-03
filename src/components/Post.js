@@ -6,7 +6,7 @@ const Posts = () => {
 
   useEffect(() => {
     // Fetch posts from the API endpoint
-    fetch("http://localhost:3000/api/posts")
+    fetch("https://fine-pink-narwhal-coat.cyclic.app/api/posts")
       .then((response) => response.json())
       .then((data) => {
         // Handle the response and extract the post data
