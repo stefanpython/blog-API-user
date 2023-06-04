@@ -1,6 +1,6 @@
 # My React Blog
 
-Live demo [Here](https://stefanpython.github.io/blog-user-api/)
+Live demo [HERE](https://stefanpython.github.io/blog-user-api/)
 
 Blog admin [here](https://github.com/stefanpython/blog-admin-api)
 
