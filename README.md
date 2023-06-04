@@ -2,7 +2,7 @@
 
 Live demo [Here](https://stefanpython.github.io/blog-user-api/)
 
-Blog Admin Api [here](https://github.com/stefanpython/blog-admin-api)
+Blog admin [here](https://github.com/stefanpython/blog-admin-api)
 
 RESTful API [here](https://github.com/stefanpython/blog-API)
 
